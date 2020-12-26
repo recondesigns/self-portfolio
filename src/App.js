@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Header } from './components/Header'
+import Landing from './pages/Landing'
 
 const AppContainer = styled.div`
   box-sizing: border-box;
@@ -11,7 +13,8 @@ const AppContainer = styled.div`
 export default function App() {
   return (
     <AppContainer>
-      <h1>App Component</h1>
+      <Header />
+      <Landing />
     </AppContainer>
   )
 }
