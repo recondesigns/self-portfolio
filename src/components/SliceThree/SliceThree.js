@@ -5,13 +5,10 @@ import { Button } from '../Button'
 import headshot from '../../assets/images/headshot2x.png'
 
 const SliceContainer = styled.div`
-    /* height: 736px; */
     background: #ECD679;
-    /* border: 1px dotted blue; */
 
     @media (min-width: 768px) {
         display: flex;
-        /* background: lightgoldenrodyellow; */
     }
 
     & > .display {
@@ -34,7 +31,6 @@ const SliceContainer = styled.div`
         box-sizing: border-box;
         position: relative;
         height: 484px;
-        /* border: 1px solid green; */
 
         & > h3 {
             margin: 0px;
@@ -51,7 +47,6 @@ const SliceContainer = styled.div`
             text-transform: uppercase;
             color: #303030;
             opacity: 0.8;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 width: 528px;
@@ -72,7 +67,6 @@ const SliceContainer = styled.div`
             font-size: 20px;
             line-height: 24px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 top: 184px;
@@ -96,7 +90,6 @@ const SliceContainer = styled.div`
             font-size: 16px;
             line-height: 20px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 top: 328px;
@@ -109,9 +102,7 @@ const SliceContainer = styled.div`
             width: 328px;
             position: absolute;
             top: 392px;
-            /* bottom: 0px; */
             left: calc(50% - 328px/2);
-            /* border: 1px dotted green; */
 
             @media (min-width: 768px) {
                 top: 540px;
@@ -123,7 +114,6 @@ const SliceContainer = styled.div`
         @media (min-width: 768px) {
             width: 720px;
             height: 736px;
-            /* background: green; */
         }
     }
 `
@@ -131,15 +121,11 @@ const SliceContainer = styled.div`
 export default function SliceThree() {
     return (
         <SliceContainer>
-             <div className={'display'}>
-                {/* <img src={headshot} alt={'Map screenshot'} /> */}
-            </div>
-
+             <div className={'display'}></div>
             <div className={'info-div'}>
                 <h3>{'About Me'}</h3>
                 <h2>{'User advocate craftsman. Hobby coder turned professional problem solver. Veteran.'}</h2>
                 <p>{'Web development has been in my life since a random class in high school exposed me to HTML and CSS (pre-CSS 2.1 lol), which ignited a lifelong hobby of coding for me.'}<br /><br />{'Luckily, I am paid to up my dev mastery and professionally solve user problems by augmenting my coding skillset with UX Design principles.'}</p>
-                {/* <p>{`Luckily, I get to continue up my dev mastery and solve user problems by augmenting my coding skillset with UX Design principles`}</p> */}
                 <div className={'button-wrapper'}>
                     <Button buttonStyle={'secondary'} buttonText={'View UX Case Studies'} />
                 </div>

@@ -7,12 +7,10 @@ import exampleImage from '../../assets/images/exampleImage.png'
 
 const SliceContainer = styled.div`
     height: 736px;
-    background: #F7FCFC;
-    /* border: 1px dotted blue; */
+    background: #FFFFFF;
 
     @media (min-width: 768px) {
         display: flex;
-        /* background: lightgoldenrodyellow; */
     }
 
     & > .display {
@@ -24,11 +22,9 @@ const SliceContainer = styled.div`
 
         & > img {
             width: 200px;
-            /* height: 312px; */
 
             @media (min-width: 768px) {
                 width: 440px;
-                /* height: 400px; */
             }
         }
 
@@ -42,7 +38,6 @@ const SliceContainer = styled.div`
         box-sizing: border-box;
         position: relative;
         height: 424px;
-        /* border: 1px solid pink; */
 
         & > h3 {
             margin: 0px;
@@ -59,7 +54,6 @@ const SliceContainer = styled.div`
             text-transform: uppercase;
             color: #303030;
             opacity: 0.8;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 width: 528px;
@@ -80,7 +74,6 @@ const SliceContainer = styled.div`
             font-size: 20px;
             line-height: 24px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 top: 184px;
@@ -104,7 +97,6 @@ const SliceContainer = styled.div`
             font-size: 16px;
             line-height: 20px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 top: 288px;
@@ -118,7 +110,6 @@ const SliceContainer = styled.div`
             position: absolute;
             top: 328px;
             left: calc(50% - 328px/2);
-            /* border: 1px dottsed green; */
 
             @media (min-width: 768px) {
                 top: 528px;
@@ -130,7 +121,6 @@ const SliceContainer = styled.div`
         @media (min-width: 768px) {
             width: 720px;
             height: 736px;
-            /* background: green; */
         }
     }
 `
@@ -141,7 +131,6 @@ export default function SliceTwo() {
              <div className={'display'}>
                 <img src={exampleImage} alt={'Map screenshot'} />
             </div>
-
             <div className={'info-div'}>
                 <h3>{'UX Design'}</h3>
                 <h2>{'Web and app design centered on user experience'}</h2>

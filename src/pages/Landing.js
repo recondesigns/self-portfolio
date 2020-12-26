@@ -5,12 +5,10 @@ import { SliceOne } from '../components/SliceOne'
 import { SliceTwo } from '../components/SliceTwo'
 import { SliceThree } from '../components/SliceThree'
 
-
 const LandingContainer = styled.div`
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    /* border: 1px dotted green; */
 `
 
 export default function Landing() {

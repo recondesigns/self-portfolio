@@ -6,8 +6,6 @@ import graphqlIcon from '../../assets/images/graphql-icon.svg'
 import mongoIcon from '../../assets/images/mongodb-icon.svg'
 import firebaseIcon from '../../assets/images/firebase-icon.svg'
 import githubIcon from '../../assets/images/github-icon.svg'
-// import dribbbleIcon from '../../assets/images/dribbble-icon.svg'
-// import figmaIcon from '../../assets/images/figma-icon.svg'
 
 const BarContainer = styled.div`
     width: 328px;
@@ -16,13 +14,11 @@ const BarContainer = styled.div`
     left: calc(50% - 328px/2);
     display: flex;
     align-items: center;
-    /* border: 1px dotted orange; */
 
     & > img {
         margin-right: 24px;
         width: 24px;
         height: 24px;
-        /* border: 1px dotted black; */
         
         @media (min-width: 768px) {
             margin-right: 32px;

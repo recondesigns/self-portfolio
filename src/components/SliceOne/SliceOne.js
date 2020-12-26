@@ -7,11 +7,9 @@ import map from '../../assets/images/map-small.png'
 const SliceContainer = styled.div`
     height: 736px;
     background: #F7FCFC;
-    /* border: 1px dotted blue; */
 
     @media (min-width: 768px) {
         display: flex;
-        /* background: lightgoldenrodyellow; */
     }
 
     & > .display {
@@ -20,8 +18,6 @@ const SliceContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: 375px; */
-        /* border: 1px solid orange; */
 
         & > img {
             width: 375px;
@@ -43,7 +39,6 @@ const SliceContainer = styled.div`
         box-sizing: border-box;
         position: relative;
         height: 424px;
-        /* border: 1px solid pink; */
 
         & > h3 {
             margin: 0px;
@@ -60,7 +55,6 @@ const SliceContainer = styled.div`
             text-transform: uppercase;
             color: #303030;
             opacity: 0.8;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 width: 528px;
@@ -81,7 +75,6 @@ const SliceContainer = styled.div`
             font-size: 20px;
             line-height: 24px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 top: 184px;
@@ -105,7 +98,6 @@ const SliceContainer = styled.div`
             font-size: 16px;
             line-height: 20px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 top: 288px;
@@ -119,7 +111,6 @@ const SliceContainer = styled.div`
             position: absolute;
             top: 328px;
             left: calc(50% - 328px/2);
-            /* border: 1px dotted green; */
 
             @media (min-width: 768px) {
                 top: 528px;
@@ -131,7 +122,6 @@ const SliceContainer = styled.div`
         @media (min-width: 768px) {
             width: 720px;
             height: 736px;
-            /* background: green; */
         }
     }
 `
@@ -142,7 +132,6 @@ export default function SliceOne() {
             <div className={'display'}>
                 <img src={map} alt={'Map screenshot'} />
             </div>
-
             <div className={'info-div'}>
                 <h3>{'Development'}</h3>
                 <h2>{'Full-stack sites && web applications'}</h2>
