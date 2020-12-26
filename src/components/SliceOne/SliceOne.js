@@ -58,7 +58,7 @@ const SliceContainer = styled.div`
             line-height: 24px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #808080;
+            color: #303030;
             opacity: 0.8;
             /* border: 1px dotted blue; */
 

@@ -34,7 +34,7 @@ const SliceContainer = styled.div`
         box-sizing: border-box;
         position: relative;
         height: 484px;
-        border: 1px solid green;
+        /* border: 1px solid green; */
 
         & > h3 {
             margin: 0px;
@@ -49,7 +49,7 @@ const SliceContainer = styled.div`
             line-height: 24px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #808080;
+            color: #303030;
             opacity: 0.8;
             /* border: 1px dotted blue; */
 
@@ -99,7 +99,7 @@ const SliceContainer = styled.div`
             /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
-                top: 288px;
+                top: 328px;
                 left: 96px;
                 width: 528px;
             }
@@ -114,7 +114,7 @@ const SliceContainer = styled.div`
             /* border: 1px dotted green; */
 
             @media (min-width: 768px) {
-                top: 528px;
+                top: 540px;
                 left: 96px;
                 width: 528px;
             }
