@@ -1,25 +1,44 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Button } from '../Button'
-import screenshot from '../../assets/images/screenshot.png'
+import screenshot from '../../assets/images/shot2.png'
 
 const SliceContainer = styled.div`
-    height: 564px;
+    /* height: 564px; */
     /* border: 2px dashed dodgerblue; */
 
     & > .display {
+        box-sizing: border-box;
         height: 340px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: relative;
         /* border: 1px solid purple; */
 
         & > img {
             height: 244px;
+            width: 120px;
+            position: absolute;
+            top: calc(50% - 244px/2);
+            left: calc(50% - 120px/2);
+            /* border: 1px solid orange; */
+
+            @media (min-width: 768px) {
+                height: 488px;
+                width: 240px;
+                top: calc(50% - 488px/2);
+                left: calc(50% - 240px/2);
+            }
         }
+
+        @media (min-width: 768px) {
+            height: 808px;
+            width: 720px;
+]        }
     }
 
+
+
     & > .info {
+        box-sizing: border-box;
         height: 224px;
         position: relative;
         /* border: 1px solid orange; */
@@ -39,16 +58,29 @@ const SliceContainer = styled.div`
             color: #303030;
             /* border: 1px dotted blue; */
 
+            @media (min-width: 768px) {
+                width: 528px;
+                top: 252px;
+                left: calc(50% - 528px/2);
+                font-size: 48px;
+                line-height: 56px;
+            }
+
             & > span {
                 font-style: normal;
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 28px;
                 color: #40ACBF;
+
+                @media (min-width: 768px) {
+                    font-size: 50px;
+                    line-height: 56px;
+                }
             }
         }
 
-        
+
 
         & > .button-wrapper {
             width: 328px;
@@ -56,7 +88,22 @@ const SliceContainer = styled.div`
             top: 128px;
             left: calc(50% - 328px/2);
             /* border: 1px dashed black; */
+
+            @media (min-width: 768px) {
+                width: 528px;
+                top: 516px;
+                left: calc(50% - 528px/2);
+            }
         }
+
+        @media (min-width: 768px) {
+            height: 808px;
+            width: 720px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        display: flex;
     }
 `
 
