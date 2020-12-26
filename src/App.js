@@ -8,7 +8,7 @@ const AppContainer = styled.div`
 export default function App() {
   return (
     <AppContainer>
-      <h1>Hello World</h1>
+      <h1>App Component</h1>
     </AppContainer>
   )
 }
