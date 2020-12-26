@@ -4,14 +4,11 @@ import { Button } from '../Button'
 import screenshot from '../../assets/images/shot2.png'
 
 const SliceContainer = styled.div`
-    /* height: 564px; */
-    /* border: 2px dashed dodgerblue; */
 
     & > .display {
         box-sizing: border-box;
         height: 340px;
         position: relative;
-        /* border: 1px solid purple; */
 
         & > img {
             height: 244px;
@@ -19,7 +16,6 @@ const SliceContainer = styled.div`
             position: absolute;
             top: calc(50% - 244px/2);
             left: calc(50% - 120px/2);
-            /* border: 1px solid orange; */
 
             @media (min-width: 768px) {
                 height: 488px;
@@ -35,13 +31,10 @@ const SliceContainer = styled.div`
 ]        }
     }
 
-
-
     & > .info {
         box-sizing: border-box;
         height: 224px;
         position: relative;
-        /* border: 1px solid orange; */
 
         & > h2 {
             margin: 0px;
@@ -56,7 +49,6 @@ const SliceContainer = styled.div`
             font-size: 24px;
             line-height: 28px;
             color: #303030;
-            /* border: 1px dotted blue; */
 
             @media (min-width: 768px) {
                 width: 528px;
@@ -80,14 +72,11 @@ const SliceContainer = styled.div`
             }
         }
 
-
-
         & > .button-wrapper {
             width: 328px;
             position: absolute;
             top: 128px;
             left: calc(50% - 328px/2);
-            /* border: 1px dashed black; */
 
             @media (min-width: 768px) {
                 width: 528px;
