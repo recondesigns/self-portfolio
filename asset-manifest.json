@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/self-portfolio/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/self-portfolio/static/js/main.fa66a762.chunk.js",
+    "main.js.map": "/self-portfolio/static/js/main.fa66a762.chunk.js.map",
+    "runtime-main.js": "/self-portfolio/static/js/runtime-main.87eed576.js",
+    "runtime-main.js.map": "/self-portfolio/static/js/runtime-main.87eed576.js.map",
+    "static/js/2.6763c4a7.chunk.js": "/self-portfolio/static/js/2.6763c4a7.chunk.js",
+    "static/js/2.6763c4a7.chunk.js.map": "/self-portfolio/static/js/2.6763c4a7.chunk.js.map",
+    "index.html": "/self-portfolio/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/self-portfolio/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.6763c4a7.chunk.js.LICENSE.txt": "/self-portfolio/static/js/2.6763c4a7.chunk.js.LICENSE.txt",
+    "static/media/exampleImage.b369e090.png": "/self-portfolio/static/media/exampleImage.b369e090.png",
+    "static/media/firebase-icon.76d53826.svg": "/self-portfolio/static/media/firebase-icon.76d53826.svg",
+    "static/media/gatsby-icon.837033c9.svg": "/self-portfolio/static/media/gatsby-icon.837033c9.svg",
+    "static/media/github-icon.1638a549.svg": "/self-portfolio/static/media/github-icon.1638a549.svg",
+    "static/media/graphql-icon.76a76af3.svg": "/self-portfolio/static/media/graphql-icon.76a76af3.svg",
+    "static/media/headshot2x.97c5f7d7.png": "/self-portfolio/static/media/headshot2x.97c5f7d7.png",
+    "static/media/map-small.f78b9a59.png": "/self-portfolio/static/media/map-small.f78b9a59.png",
+    "static/media/mongodb-icon.940de413.svg": "/self-portfolio/static/media/mongodb-icon.940de413.svg",
+    "static/media/react-icon.776a0df1.svg": "/self-portfolio/static/media/react-icon.776a0df1.svg",
+    "static/media/shot2.0bb117a2.png": "/self-portfolio/static/media/shot2.0bb117a2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87eed576.js",
+    "static/js/2.6763c4a7.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.fa66a762.chunk.js"
+  ]
+}
