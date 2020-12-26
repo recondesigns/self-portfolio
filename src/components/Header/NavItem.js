@@ -24,7 +24,6 @@ const ItemContainer = styled.div`
 
 export default function NavItem(props) {
     const { linkText, linkStatus } = props
-
     let borderDisplay = setLinkDisplay(linkStatus)
 
     return (
