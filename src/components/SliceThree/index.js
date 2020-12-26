@@ -1,0 +1,1 @@
+export { default as SliceThree } from './SliceThree'

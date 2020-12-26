@@ -1,13 +1,12 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import IconBar from '../SliceOne/IconBar'
 import { Button } from '../Button'
-import exampleImage from '../../assets/images/exampleImage.png'
+import headshot from '../../assets/images/headshot2x.png'
 
 const SliceContainer = styled.div`
-    height: 736px;
-    background: #F7FCFC;
+    /* height: 736px; */
+    background: #ECD679;
     /* border: 1px dotted blue; */
 
     @media (min-width: 768px) {
@@ -21,16 +20,9 @@ const SliceContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-
-        & > img {
-            width: 200px;
-            /* height: 312px; */
-
-            @media (min-width: 768px) {
-                width: 440px;
-                /* height: 400px; */
-            }
-        }
+        background: url(${headshot});
+        background-size: cover;
+        background-repeat: no-repeat;
 
         @media (min-width: 768px) {
             width: 720px;
@@ -41,8 +33,8 @@ const SliceContainer = styled.div`
     & > .info-div {
         box-sizing: border-box;
         position: relative;
-        height: 424px;
-        /* border: 1px solid pink; */
+        height: 484px;
+        border: 1px solid green;
 
         & > h3 {
             margin: 0px;
@@ -72,7 +64,7 @@ const SliceContainer = styled.div`
             margin: 0px;
             width: 328px;
             position: absolute;
-            top: 96px;
+            top: 88px;
             left: calc(50% - 328px/2);
             font-family: Open Sans;
             font-style: normal;
@@ -96,7 +88,7 @@ const SliceContainer = styled.div`
             margin: 0px;
             width: 328px;
             position: absolute;
-            top: 152px;
+            top: 168px;
             left: calc(50% - 328px/2);
             font-family: Open Sans;
             font-style: normal;
@@ -116,9 +108,10 @@ const SliceContainer = styled.div`
         & > .button-wrapper {
             width: 328px;
             position: absolute;
-            top: 328px;
+            top: 392px;
+            /* bottom: 0px; */
             left: calc(50% - 328px/2);
-            /* border: 1px dottsed green; */
+            /* border: 1px dotted green; */
 
             @media (min-width: 768px) {
                 top: 528px;
@@ -135,18 +128,18 @@ const SliceContainer = styled.div`
     }
 `
 
-export default function SliceTwo() {
+export default function SliceThree() {
     return (
         <SliceContainer>
              <div className={'display'}>
-                <img src={exampleImage} alt={'Map screenshot'} />
+                {/* <img src={headshot} alt={'Map screenshot'} /> */}
             </div>
 
             <div className={'info-div'}>
-                <h3>{'UX Design'}</h3>
-                <h2>{'Web and app design centered on user experience'}</h2>
-                <p>{'Mitigating client risk with user research, personas, journey mapping, and other tools to engineer solutions to problems and improve usability for sites and apps.'}</p>
-                <IconBar />
+                <h3>{'About Me'}</h3>
+                <h2>{'User advocate craftsman. Hobby coder turned professional problem solver. Veteran.'}</h2>
+                <p>{'Web development has been in my life since a random class in high school exposed me to HTML and CSS (pre-CSS 2.1 lol), which ignited a lifelong hobby of coding for me.'}<br /><br />{'Luckily, I am paid to up my dev mastery and professionally solve user problems by augmenting my coding skillset with UX Design principles.'}</p>
+                {/* <p>{`Luckily, I get to continue up my dev mastery and solve user problems by augmenting my coding skillset with UX Design principles`}</p> */}
                 <div className={'button-wrapper'}>
                     <Button buttonStyle={'secondary'} buttonText={'View UX Case Studies'} />
                 </div>

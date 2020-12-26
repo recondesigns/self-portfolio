@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { HeroSlice } from '../components/HeroSlice'
 import { SliceOne } from '../components/SliceOne'
 import { SliceTwo } from '../components/SliceTwo'
+import { SliceThree } from '../components/SliceThree'
 
 
 const LandingContainer = styled.div`
@@ -18,6 +19,7 @@ export default function Landing() {
             <HeroSlice />
             <SliceOne />
             <SliceTwo />
+            <SliceThree />
         </LandingContainer>
     )
 }
