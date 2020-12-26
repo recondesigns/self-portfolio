@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import { setButtonStyling } from './utils'
 
 const StyledButton = styled.button`
     width: 200px;
     height: 40px;
-    background: #ECD679;
+    background: ${props => props.background};
     border: 2px solid #303030;
     box-sizing: border-box;
     box-shadow: 4px 4px 0px rgba(48, 48, 48, 0.5);
@@ -31,6 +32,8 @@ const StyledButton = styled.button`
 `
 
 export default function Button(props) {
-    const { buttonText } = props
-    return <StyledButton>{buttonText}</StyledButton>
+    const { buttonStyle, buttonText } = props
+    let background = setButtonStyling(buttonStyle)
+
+    return <StyledButton background={background}>{buttonText}</StyledButton>
 }
