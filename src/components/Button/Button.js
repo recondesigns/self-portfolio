@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { setButtonStyling } from './utils'
 
 const StyledButton = styled.button`
-    width: 200px;
+    width: 240px;
     height: 40px;
     background: ${props => props.background};
     border: 2px solid #303030;

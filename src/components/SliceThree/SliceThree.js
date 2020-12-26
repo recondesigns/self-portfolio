@@ -127,7 +127,7 @@ export default function SliceThree() {
                 <h2>{'User advocate craftsman. Hobby coder turned professional problem solver. Veteran.'}</h2>
                 <p>{'Web development has been in my life since a random class in high school exposed me to HTML and CSS (pre-CSS 2.1 lol), which ignited a lifelong hobby of coding for me.'}<br /><br />{'Luckily, I am paid to up my dev mastery and professionally solve user problems by augmenting my coding skillset with UX Design principles.'}</p>
                 <div className={'button-wrapper'}>
-                    <Button buttonStyle={'secondary'} buttonText={'View UX Case Studies'} />
+                    <Button buttonStyle={'secondary'} buttonText={'Contact me'} />
                 </div>
             </div>
         </SliceContainer>
