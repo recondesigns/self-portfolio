@@ -25,7 +25,7 @@ const BarContainer = styled.div`
         /* border: 1px dotted black; */
         
         @media (min-width: 768px) {
-            margin-rigth: 32px;
+            margin-right: 32px;
             width: 32px;
             height: 32px;
         }
@@ -34,7 +34,7 @@ const BarContainer = styled.div`
     @media (min-width: 768px) {
         top: 392px;
         left: 96px;
-        max-width: 528px;
+        width: 528px;
         height: 64px;
     }
 `

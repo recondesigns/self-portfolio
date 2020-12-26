@@ -1,12 +1,13 @@
+
 import React from 'react'
 import styled from 'styled-components'
-import IconBar from './IconBar'
+import IconBar from '../SliceOne/IconBar'
 import { Button } from '../Button'
-import map from '../../assets/images/map-small.png'
+import exampleImage from '../../assets/images/exampleImage.png'
 
 const SliceContainer = styled.div`
     height: 736px;
-    background: #F7FCFC;
+    background: #FFFFFF;
     /* border: 1px dotted blue; */
 
     @media (min-width: 768px) {
@@ -20,16 +21,14 @@ const SliceContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: 375px; */
-        /* border: 1px solid orange; */
 
         & > img {
-            width: 375px;
-            height: 312px;
+            width: 200px;
+            /* height: 312px; */
 
             @media (min-width: 768px) {
-                width: 100%;
-                height: 100%;
+                width: 440px;
+                /* height: 400px; */
             }
         }
 
@@ -119,7 +118,7 @@ const SliceContainer = styled.div`
             position: absolute;
             top: 328px;
             left: calc(50% - 328px/2);
-            /* border: 1px dotted green; */
+            /* border: 1px dottsed green; */
 
             @media (min-width: 768px) {
                 top: 528px;
@@ -136,20 +135,20 @@ const SliceContainer = styled.div`
     }
 `
 
-export default function SliceOne() {
+export default function SliceTwo() {
     return (
         <SliceContainer>
-            <div className={'display'}>
-                <img src={map} alt={'Map screenshot'} />
+             <div className={'display'}>
+                <img src={exampleImage} alt={'Map screenshot'} />
             </div>
 
             <div className={'info-div'}>
-                <h3>{'Development'}</h3>
-                <h2>{'Full-stack sites && web applications'}</h2>
-                <p>{'Creating React components like its going out of style - schooled with the MERN stack, but consistently growing by adding new libraries and frameworks.'}</p>
+                <h3>{'UX Design'}</h3>
+                <h2>{'Web and app design centered on user experience'}</h2>
+                <p>{'Mitigating client risk with user research, personas, journey mapping, and other tools to engineer solutions to problems and improve usability for sites and apps.'}</p>
                 <IconBar />
                 <div className={'button-wrapper'}>
-                    <Button buttonStyle={'secondary'} buttonText={'View dev projects'} />
+                    <Button buttonStyle={'secondary'} buttonText={'View UX Case Studies'} />
                 </div>
             </div>
         </SliceContainer>
