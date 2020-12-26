@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Header } from './components/Header'
 import Landing from './pages/Landing'
 
 const AppContainer = styled.div`
@@ -12,6 +13,7 @@ const AppContainer = styled.div`
 export default function App() {
   return (
     <AppContainer>
+      <Header />
       <Landing />
     </AppContainer>
   )
