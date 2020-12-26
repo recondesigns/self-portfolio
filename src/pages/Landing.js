@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../components/Button'
+import { HeroSlice } from '../components/HeroSlice'
 
 const LandingContainer = styled.div`
-    border: 2px dashed dodgerblue;
+    border: 1px dotted green;
 `
 
 export default function Landing() {
     return (
         <LandingContainer>
-            <Button buttonStyle={'primary'} buttonText={`Let's collaborate`} />
+            <HeroSlice />
         </LandingContainer>
     )
 }
