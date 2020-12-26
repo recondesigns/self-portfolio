@@ -9,8 +9,7 @@ const LandingContainer = styled.div`
 export default function Landing() {
     return (
         <LandingContainer>
-            <p>Landing</p>
-            <Button />
+            <Button buttonStyle={'primary'} buttonText={`Let's collaborate`} />
         </LandingContainer>
     )
 }
