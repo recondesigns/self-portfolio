@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import IconBar from '../SliceTwo/IconBar'
 import { Button } from '../Button'
-import exampleImage from '../../assets/images/exampleImage.png'
+import mapSmall from '../../assets/images/map-small.png'
 
 const SliceContainer = styled.div`
     height: 736px;
@@ -132,7 +132,7 @@ export default function SliceTwo() {
     return (
         <SliceContainer>
              <div className={'display'}>
-                <img src={exampleImage} alt={'Map screenshot'} />
+                <img src={mapSmall} alt={'Map screenshot'} />
             </div>
             <div className={'info-div'}>
                 <h3>{'UX Design'}</h3>

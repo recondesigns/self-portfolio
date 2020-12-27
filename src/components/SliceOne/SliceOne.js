@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import IconBar from './IconBar'
 import { Button } from '../Button'
-import map from '../../assets/images/map-small.png'
+import mapSmall from '../../assets/images/map-small.png'
+import mapLarge from '../../assets/images/map-lrg.png'
+
 
 const SliceContainer = styled.div`
     height: 736px;
@@ -18,20 +20,18 @@ const SliceContainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-
-        & > img {
-            width: 375px;
-            height: 312px;
-
-            @media (min-width: 768px) {
-                width: 100%;
-                height: 100%;
-            }
-        }
+        background: URL(${mapSmall});
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         @media (min-width: 768px) {
             width: 720px;
             height: 736px;
+            background: URL(${mapLarge});
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
 
@@ -133,9 +133,7 @@ const SliceContainer = styled.div`
 export default function SliceOne() {
     return (
         <SliceContainer>
-            <div className={'display'}>
-                <img src={map} alt={'Map screenshot'} />
-            </div>
+            <div className={'display'}></div>
             <div className={'info-div'}>
                 <h3>{'Development'}</h3>
                 <h2>Full-stack sites <span>&&</span> web applications</h2>
