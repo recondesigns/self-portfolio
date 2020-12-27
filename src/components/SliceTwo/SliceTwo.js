@@ -1,7 +1,6 @@
-
 import React from 'react'
 import styled from 'styled-components'
-import IconBar from '../SliceOne/IconBar'
+import IconBar from '../SliceTwo/IconBar'
 import { Button } from '../Button'
 import exampleImage from '../../assets/images/exampleImage.png'
 

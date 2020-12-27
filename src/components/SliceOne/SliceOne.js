@@ -140,7 +140,7 @@ export default function SliceOne() {
                 <h3>{'Development'}</h3>
                 <h2>Full-stack sites <span>&&</span> web applications</h2>
                 <p>{'Creating React components like its going out of style - schooled with the MERN stack, but consistently growing by adding new libraries and frameworks, and now loving the Jamstck.'}</p>
-                <IconBar />
+                <IconBar icons={['figma', 'dribbble']} />
                 <div className={'button-wrapper'}>
                     <Button buttonStyle={'secondary'} buttonText={'View dev projects'} />
                 </div>
