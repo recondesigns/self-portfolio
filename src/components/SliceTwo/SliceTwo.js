@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import IconBar from '../SliceTwo/IconBar'
 import { Button } from '../Button'
-import mapSmall from '../../assets/images/map-small.png'
+import uxExampleSmall from '../../assets/images/example-sml.png'
+import uxExampleLarge from '../../assets/images/example-lrg.png'
+
 
 const SliceContainer = styled.div`
     height: 736px;
@@ -15,21 +17,23 @@ const SliceContainer = styled.div`
     & > .display {
         box-sizing: border-box;
         height: 312px;
-        display: flex;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
 
-        & > img {
-            width: 200px;
-
-            @media (min-width: 768px) {
-                width: 440px;
-            }
-        }
+        background: URL(${uxExampleSmall});
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         @media (min-width: 768px) {
             width: 720px;
             height: 736px;
+
+            background: URL(${uxExampleLarge});
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
 
@@ -131,9 +135,7 @@ const SliceContainer = styled.div`
 export default function SliceTwo() {
     return (
         <SliceContainer>
-             <div className={'display'}>
-                <img src={mapSmall} alt={'Map screenshot'} />
-            </div>
+             <div className={'display'}></div>
             <div className={'info-div'}>
                 <h3>{'UX Design'}</h3>
                 <h2>Making <span>user experience</span> a linchpin of web and app design </h2>
