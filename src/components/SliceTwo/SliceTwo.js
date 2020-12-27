@@ -74,6 +74,10 @@ const SliceContainer = styled.div`
             font-size: 20px;
             line-height: 24px;
             color: #303030;
+            
+            & > span {
+                color: #40ACBF;
+            }
 
             @media (min-width: 768px) {
                 top: 184px;
@@ -133,7 +137,7 @@ export default function SliceTwo() {
             </div>
             <div className={'info-div'}>
                 <h3>{'UX Design'}</h3>
-                <h2>{'Web and app design centered on user experience'}</h2>
+                <h2>Making <span>user experience</span> a linchpin of web and app design </h2>
                 <p>{'Mitigating client risk with user research, personas, journey mapping, and other tools to engineer solutions to problems and improve usability for sites and apps.'}</p>
                 <IconBar />
                 <div className={'button-wrapper'}>

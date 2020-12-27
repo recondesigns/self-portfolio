@@ -76,6 +76,10 @@ const SliceContainer = styled.div`
             line-height: 24px;
             color: #303030;
 
+            & > span {
+                color: #40ACBF;
+            }
+
             @media (min-width: 768px) {
                 top: 184px;
                 left: 96px;
@@ -134,8 +138,8 @@ export default function SliceOne() {
             </div>
             <div className={'info-div'}>
                 <h3>{'Development'}</h3>
-                <h2>{'Full-stack sites && web applications'}</h2>
-                <p>{'Creating React components like its going out of style - schooled with the MERN stack, but consistently growing by adding new libraries and frameworks.'}</p>
+                <h2>Full-stack sites <span>&&</span> web applications</h2>
+                <p>{'Creating React components like its going out of style - schooled with the MERN stack, but consistently growing by adding new libraries and frameworks, and now loving the Jamstck.'}</p>
                 <IconBar />
                 <div className={'button-wrapper'}>
                     <Button buttonStyle={'secondary'} buttonText={'View dev projects'} />
