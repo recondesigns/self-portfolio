@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 import { Button } from '../Button'
 import screenshot from '../../assets/images/shot2.png'
 
@@ -60,16 +61,7 @@ const SliceContainer = styled.div`
             }
 
             & > span {
-                /* font-style: normal; */
-                /* font-weight: bold; */
-                /* font-size: 24px; */
-                /* line-height: 28px; */
                 color: #40ACBF;
-
-                /* @media (min-width: 768px) {
-                    font-size: 50px;
-                    line-height: 56px;
-                } */
             }
         }
 
@@ -78,6 +70,10 @@ const SliceContainer = styled.div`
             position: absolute;
             top: 128px;
             left: calc(50% - 328px/2);
+
+            & > a {
+                text-decoration: none;
+            }
 
             @media (min-width: 768px) {
                 width: 528px;
@@ -107,7 +103,9 @@ export default function HeroSlice() {
             <div className={'info'}>
                 <h2>Fullstack developer impacting teams with <span>UX Design</span> influence</h2>
                 <div className={'button-wrapper'}>
-                    <Button buttonStyle={'primary'} buttonText={`Let's collaborate`} />
+                    <NavLink to='/contact' activeClassName={'selected'}>
+                        <Button buttonStyle={'primary'} buttonText={`Let's collaborate`} />
+                    </NavLink>
                 </div>
             </div>
         </SliceContainer>

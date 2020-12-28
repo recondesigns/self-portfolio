@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 import IconBar from './IconBar'
 import { Button } from '../Button'
 import mapSmall from '../../assets/images/map-small.png'
@@ -116,6 +117,10 @@ const SliceContainer = styled.div`
             top: 328px;
             left: calc(50% - 328px/2);
 
+            & > a {
+                text-decoration: none;
+            }
+
             @media (min-width: 768px) {
                 top: 528px;
                 left: 96px;
@@ -140,7 +145,9 @@ export default function SliceOne() {
                 <p>{'Creating React components like its going out of style - schooled with the MERN stack, but consistently growing by adding new libraries and frameworks, and now loving the Jamstck.'}</p>
                 <IconBar icons={['figma', 'dribbble']} />
                 <div className={'button-wrapper'}>
-                    <Button buttonStyle={'secondary'} buttonText={'View dev projects'} />
+                    <NavLink to='/developer' activeClassName={'selected'}>
+                        <Button buttonStyle={'secondary'} buttonText={'View dev projects'} />
+                    </NavLink>
                 </div>
             </div>
         </SliceContainer>

@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 import IconBar from '../SliceTwo/IconBar'
 import { Button } from '../Button'
 import uxExampleSmall from '../../assets/images/example-sml.png'
 import uxExampleLarge from '../../assets/images/example-lrg.png'
-
 
 const SliceContainer = styled.div`
     height: 736px;
@@ -126,6 +126,10 @@ const SliceContainer = styled.div`
             top: 328px;
             left: calc(50% - 328px/2);
 
+            & > a {
+                text-decoration: none;
+            }
+
             @media (min-width: 768px) {
                 top: 528px;
                 left: 96px;
@@ -152,7 +156,9 @@ export default function SliceTwo() {
                 <p>{'Mitigating client risk with user research, personas, journey mapping, and other tools to engineer solutions to problems and improve usability for sites and apps.'}</p>
                 <IconBar />
                 <div className={'button-wrapper'}>
-                    <Button buttonStyle={'secondary'} buttonText={'View UX Case Studies'} />
+                    <NavLink to='/uxdesigner' activeClassName={'selected'}>
+                        <Button buttonStyle={'secondary'} buttonText={'View UX Case Studies'} />
+                    </NavLink>
                 </div>
             </div>
         </SliceContainer>
