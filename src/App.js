@@ -25,19 +25,15 @@ export default function App() {
         <Route exact path='/home'>
           <Landing />
         </Route>
-          
         <Route path='/developer'>
           <Developer />
         </Route>
-
         <Route path='/uxdesigner'>
           <UxDesigner />
         </Route>
-
         <Route path='/about'>
           <About />
         </Route>
-
         <Route path='/contact'>
           <Contact />
         </Route>
