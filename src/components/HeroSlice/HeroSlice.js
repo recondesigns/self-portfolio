@@ -45,7 +45,8 @@ const SliceContainer = styled.div`
             left: calc(50% - 328px/2);
             font-family: Open Sans;
             font-style: normal;
-            font-weight: 600;
+            /* font-weight: 600; */
+            font-weight: bold;
             font-size: 24px;
             line-height: 28px;
             color: #303030;
@@ -59,16 +60,16 @@ const SliceContainer = styled.div`
             }
 
             & > span {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 28px;
+                /* font-style: normal; */
+                /* font-weight: bold; */
+                /* font-size: 24px; */
+                /* line-height: 28px; */
                 color: #40ACBF;
 
-                @media (min-width: 768px) {
+                /* @media (min-width: 768px) {
                     font-size: 50px;
                     line-height: 56px;
-                }
+                } */
             }
         }
 
@@ -104,7 +105,7 @@ export default function HeroSlice() {
             </div>
 
             <div className={'info'}>
-                <h2>Fullstack developer impacting teams using <span>UX Design</span> influence</h2>
+                <h2>Fullstack developer impacting teams with <span>UX Design</span> influence</h2>
                 <div className={'button-wrapper'}>
                     <Button buttonStyle={'primary'} buttonText={`Let's collaborate`} />
                 </div>
