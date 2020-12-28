@@ -8,7 +8,7 @@ const HeaderContainer = styled.div`
     position: relative;
     height: 96px;
     display: flex;
-    background: #ECD679;
+    /* background: #ECD679; */
 
     & > .nav-container {
         width: 576px;
