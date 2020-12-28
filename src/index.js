@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AppState from './providers/AppState'
 import './index.css';
 import App from './App';
 
+function Index() {
+    return (
+        <AppState>
+            <App />
+        </AppState>
+    )
+}
+
 ReactDOM.render(
-    <App />, document.getElementById('root')
+    <Index />, document.getElementById('root')
 )
