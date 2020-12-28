@@ -17,23 +17,31 @@ const SliceContainer = styled.div`
     & > .display {
         box-sizing: border-box;
         height: 312px;
-        /* display: flex;
+        display: flex;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
 
-        background: URL(${uxExampleSmall});
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        & > .image {
+            height: 200px;
+            width: 220px;
+            background: url(${uxExampleSmall});
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @media (min-width: 768px) {
+                height: 400px;
+                width: 440px;
+                background: url(${uxExampleLarge});
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
 
         @media (min-width: 768px) {
             width: 720px;
             height: 736px;
-
-            background: URL(${uxExampleLarge});
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
         }
     }
 
@@ -135,7 +143,9 @@ const SliceContainer = styled.div`
 export default function SliceTwo() {
     return (
         <SliceContainer>
-             <div className={'display'}></div>
+            <div className={'display'}>
+                <div className={'image'}></div>
+            </div>
             <div className={'info-div'}>
                 <h3>{'UX Design'}</h3>
                 <h2>Making <span>user experience</span> a linchpin of web and app design </h2>
